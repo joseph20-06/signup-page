@@ -20,7 +20,6 @@ text-decoration:none;
       width: 400px;
       height:485px;
       padding: 2% 3% ;
-      top: 50%;
       left:7%;
       position: absolute;
       -ms-backdrop-filter:blur(20px);
@@ -33,7 +32,7 @@ h2{
      font-style: normal;
   position: absolute;
   left: -70px;
-  top: -60px;
+  top: -65px;
 margin-left: 20%;
 margin-right: 20%;
 }
@@ -59,7 +58,7 @@ border-radius: 30px;
 }
 .container{
   position: relative;
-  top: 100px;
+  top: 80px;
 }
 input,select{
   margin-bottom: 10px;
