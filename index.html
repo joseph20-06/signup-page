@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>sign up page</title>
+  <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/comfortaa-bold" type="text/css"/>
+  <script>
+  function radio(){
+    if(document.getElementById("Doc").checked){
+      document.getElementById("Doctor").style.display="block";
+      document.getElementById("Student").style.display="none" ;
+      document.getElementById("Other").style.display="none";
+      }
+  }
+  function radio1(){
+    if(document.getElementById("Stu").checked){
+      document.getElementById("Student").style.display="block";
+      document.getElementById("Doctor").style.display="none";
+      document.getElementById("Other").style.display="none";
+      }
+  }
+  function radio2(){
+    if(document.getElementById("other").checked){
+      document.getElementById("Other").style.display="block";
+      document.getElementById("Student").style.display="none";
+      document.getElementById("Doctor").style.display="none";
+      }
+  }
+  </script>
+  </head>
+  <body>
+<div class="container">
+<h2><b>Create a new account</b></h2>
+
+<div class="form" style="color:#000">
+  <form action="/action_page.php">
+
+    <label for="fname">First Name : </label>
+    <input type="text" id="fname" name="firstname" placeholder="Your first name.."><br>
+
+
+    <label for="mname">Middle Name :</label>
+    <input type="text" id="mname" name="middlename" placeholder="Your middle name.."><br>
+
+
+    <label for="lname">Last Name :</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name.."><br>
+
+
+    <label for="Age">Age :</label>
+    <input type="number"><br>
+
+
+    <label for="Gender">Gender :</label>
+    <select>
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+      <option value="other">Other</option>
+    </select> <br>
+
+  <label for="profession">Profession :</label>
+  <input type="radio" id="Doc" name="ysorno" onclick="radio()" Doctor>
+  <label for="Doc">Doctor</label>
+  <input type="radio" id="Stu" name="ysorno" onclick="radio1()" Student>
+  <label for="Stu">Student</label>
+  <input type="radio" id="other" name="ysorno" onclick="radio2()" other>
+  <label for="other">other</label> <br>
+<div id="Doctor" style="display:none;">
+  <label for="Regnum">Registration Number :</label>
+  <input type="text" id="Regnum" placeholder="Your Registration Number..">
+  <label for="Aadhar">Aadhar Number :</label>
+  <input type="text" id="Aadhar" placeholder="Your Aadhar Number..">
+  <label for="Hospital">Hospital Name :</label>
+  <input type="text" id="Hospital" placeholder="Your Hospital Name.."><br>
+</div>
+<div id="Student" style="display:none;">
+  <label for="Aadharnum">Aadhar Number :</label>
+  <input type="text" id="Aadhnum" placeholder="Your Aadhar Number..">
+  <label for="Collegename">College Name :</label>
+  <input type="text" id="colname" placeholder="Your College Name..">
+  <br>
+</div>
+<div id="Other" style="display:none;">
+  <label for="Location">Location :</label>
+  <input type="text" id="Location" placeholder="Your Location.."><br>
+  <label for="Occupation">Occupation :</label>
+  <input type="text" id="Occupation" placeholder="Your Occupation.."><br>
+
+</div>
+<label for="Preaddr">Present Address :</label>
+<input type="text" id="Presentadd" name="Present Address" placeholder="Your present address.."><br>
+
+
+<label for="Peraddr">Permanent Address :</label>
+<input type="text" id="Permanentadd" name="Permanent Address" placeholder="Your permanent address.."><br>
+
+
+<label for="Mobnum">Mob number :</label>
+<input type="text" id="mobnum" name="Mobile Number" placeholder="Your mobile number.."><br>
+
+
+<label for="Mail-id">Mail-id :</label>
+<input type="email" id="mail-id" name="Mail-id" placeholder="Your mail id.."><br>
+<div class="submit">
+<button type="submit"><span>submit</span>
+</div>
+</div>
+
+  </form>
+</div>
+</body>
+</html>
